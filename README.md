@@ -2,6 +2,8 @@
 
 This repo implements a WAI-ARIA v1.2 compliant combobox with a listbox and a dropdown button.
 
+For more details, please check out my blog: [Building an Accessible Combobox](https://blog.junjizhi.com/all/technical/2020/10/18/a11y-combobox.html) 
+
 ## Demo
 
 ![accessible combobox demo gif](https://user-images.githubusercontent.com/2715151/96359280-03a79d80-10df-11eb-909b-be8eed0ee6b8.gif)
@@ -101,7 +103,7 @@ In particular, I added a few properties to the Combobox class:
   - More callback hooks to make it to extend and implement other behaviors
   - ES6 class syntax
 
-For more details, please check out [my blog](https://blog.junjizhi.com/).
+For more details, please check out [my blog](https://blog.junjizhi.com/all/technical/2020/10/18/a11y-combobox.html).
 
 ### HTMl elements structure assumptions
 
