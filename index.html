@@ -6,201 +6,207 @@
     <link rel="stylesheet" href="css/combobox.css">
   </head>
   <body>
-    <h1>Accessible Combobox with Listbox Popup (WAI-ARIA v1.2)</h1>
-
-    <label for="cb1-input">
-      State
-    </label>
-    <div class="combobox combobox-list">
-      <div class="group">
-        <input id="cb1-input"
-              class="cb_edit"
-              type="text"
-              role="combobox"
-              aria-autocomplete="both"
-              aria-expanded="false"
-              aria-controls="lb1">
-        <button type="button"
-                id="cb1-button"
-                aria-label="Open"
-                tabindex="-1">
-          ▼
-        </button>
+    <h1 tabindex="1">Accessible Combobox with Listbox Popup (WAI-ARIA v1.2)</h1>
+    <p>Github Repo: <a href="https://github.com/junjizhi/accessible-combobox">https://github.com/junjizhi/accessible-combobox</a></p>
+    <br />
+    <div>
+      <label for="cb1-input">
+        Select a State
+      </label>
+      <div class="combobox combobox-list">
+        <div class="group">
+          <input id="cb1-input"
+                class="cb_edit"
+                type="text"
+                role="combobox"
+                aria-autocomplete="both"
+                aria-expanded="false"
+                aria-controls="lb1"
+                aria-haspopup="listbox"
+                aria-multiline="false"
+                >
+          <button type="button"
+                  id="cb1-button"
+                  aria-label="open state list"
+                  tabindex="-1">
+            ▼
+          </button>
+        </div>
+        <ul id="lb1"
+            role="listbox"
+            aria-label="States">
+        </ul>
+        <ul id="listbox-options" class="hidden">
+          <li id="lb1-al" class="hidden">
+            Alabama
+          </li>
+          <li id="lb1-ak" class="hidden">
+            Alaska
+          </li>
+          <li id="lb1-as" class="hidden">
+            American Samoa
+          </li>
+          <li id="lb1-az" class="hidden">
+            Arizona
+          </li>
+          <li id="lb1-ar" class="hidden">
+            Arkansas
+          </li>
+          <li id="lb1-ca" class="hidden">
+            California
+          </li>
+          <li id="lb1-co" class="hidden">
+            Colorado
+          </li>
+          <li id="lb1-ct" class="hidden">
+            Connecticut
+          </li>
+          <li id="lb1-de" class="hidden">
+            Delaware
+          </li>
+          <li id="lb1-dc" class="hidden">
+            District of Columbia
+          </li>
+          <li id="lb1-fl" class="hidden">
+            Florida
+          </li>
+          <li id="lb1-ga" class="hidden">
+            Georgia
+          </li>
+          <li id="lb1-gm" class="hidden">
+            Guam
+          </li>
+          <li id="lb1-hi" class="hidden">
+            Hawaii
+          </li>
+          <li id="lb1-id" class="hidden">
+            Idaho
+          </li>
+          <li id="lb1-il" class="hidden">
+            Illinois
+          </li>
+          <li id="lb1-in" class="hidden">
+            Indiana
+          </li>
+          <li id="lb1-ia" class="hidden">
+            Iowa
+          </li>
+          <li id="lb1-ks" class="hidden">
+            Kansas
+          </li>
+          <li id="lb1-ky" class="hidden">
+            Kentucky
+          </li>
+          <li id="lb1-la" class="hidden">
+            Louisiana
+          </li>
+          <li id="lb1-me" class="hidden">
+            Maine
+          </li>
+          <li id="lb1-md" class="hidden">
+            Maryland
+          </li>
+          <li id="lb1-ma" class="hidden">
+            Massachusetts
+          </li>
+          <li id="lb1-mi" class="hidden">
+            Michigan
+          </li>
+          <li id="lb1-mn" class="hidden">
+            Minnesota
+          </li>
+          <li id="lb1-ms" class="hidden">
+            Mississippi
+          </li>
+          <li id="lb1-mo" class="hidden">
+            Missouri
+          </li>
+          <li id="lb1-mt" class="hidden">
+            Montana
+          </li>
+          <li id="lb1-ne" class="hidden">
+            Nebraska
+          </li>
+          <li id="lb1-nv" class="hidden">
+            Nevada
+          </li>
+          <li id="lb1-nh" class="hidden">
+            New Hampshire
+          </li>
+          <li id="lb1-nj" class="hidden">
+            New Jersey
+          </li>
+          <li id="lb1-nm" class="hidden">
+            New Mexico
+          </li>
+          <li id="lb1-ny" class="hidden">
+            New York
+          </li>
+          <li id="lb1-nc" class="hidden">
+            North Carolina
+          </li>
+          <li id="lb1-nd" class="hidden">
+            North Dakota
+          </li>
+          <li id="lb1-mp" class="hidden">
+            Northern Marianas Islands
+          </li>
+          <li id="lb1-oh" class="hidden">
+            Ohio
+          </li>
+          <li id="lb1-ok" class="hidden">
+            Oklahoma
+          </li>
+          <li id="lb1-or" class="hidden">
+            Oregon
+          </li>
+          <li id="lb1-pa" class="hidden">
+            Pennsylvania
+          </li>
+          <li id="lb1-pr" class="hidden">
+            Puerto Rico
+          </li>
+          <li id="lb1-ri" class="hidden">
+            Rhode Island
+          </li>
+          <li id="lb1-sc" class="hidden">
+            South Carolina
+          </li>
+          <li id="lb1-sd" class="hidden">
+            South Dakota
+          </li>
+          <li id="lb1-tn" class="hidden">
+            Tennessee
+          </li>
+          <li id="lb1-tx" class="hidden">
+            Texas
+          </li>
+          <li id="lb1-ut" class="hidden">
+            Utah
+          </li>
+          <li id="lb1-ve" class="hidden">
+            Vermont
+          </li>
+          <li id="lb1-va" class="hidden">
+            Virginia
+          </li>
+          <li id="lb1-vi" class="hidden">
+            Virgin Islands
+          </li>
+          <li id="lb1-wa" class="hidden">
+            Washington
+          </li>
+          <li id="lb1-wv" class="hidden">
+            West Virginia
+          </li>
+          <li id="lb1-wi" class="hidden">
+            Wisconsin
+          </li>
+          <li id="lb1-wy" class="hidden">
+            Wyoming
+          </li>
+        </ul>
       </div>
-      <ul id="lb1"
-          role="listbox"
-          aria-label="States">
-      </ul>
-      <ul id="listbox-options" class="hidden">
-        <li id="lb1-al" class="hidden">
-          Alabama
-        </li>
-        <li id="lb1-ak" class="hidden">
-          Alaska
-        </li>
-        <li id="lb1-as" class="hidden">
-          American Samoa
-        </li>
-        <li id="lb1-az" class="hidden">
-          Arizona
-        </li>
-        <li id="lb1-ar" class="hidden">
-          Arkansas
-        </li>
-        <li id="lb1-ca" class="hidden">
-          California
-        </li>
-        <li id="lb1-co" class="hidden">
-          Colorado
-        </li>
-        <li id="lb1-ct" class="hidden">
-          Connecticut
-        </li>
-        <li id="lb1-de" class="hidden">
-          Delaware
-        </li>
-        <li id="lb1-dc" class="hidden">
-          District of Columbia
-        </li>
-        <li id="lb1-fl" class="hidden">
-          Florida
-        </li>
-        <li id="lb1-ga" class="hidden">
-          Georgia
-        </li>
-        <li id="lb1-gm" class="hidden">
-          Guam
-        </li>
-        <li id="lb1-hi" class="hidden">
-          Hawaii
-        </li>
-        <li id="lb1-id" class="hidden">
-          Idaho
-        </li>
-        <li id="lb1-il" class="hidden">
-          Illinois
-        </li>
-        <li id="lb1-in" class="hidden">
-          Indiana
-        </li>
-        <li id="lb1-ia" class="hidden">
-          Iowa
-        </li>
-        <li id="lb1-ks" class="hidden">
-          Kansas
-        </li>
-        <li id="lb1-ky" class="hidden">
-          Kentucky
-        </li>
-        <li id="lb1-la" class="hidden">
-          Louisiana
-        </li>
-        <li id="lb1-me" class="hidden">
-          Maine
-        </li>
-        <li id="lb1-md" class="hidden">
-          Maryland
-        </li>
-        <li id="lb1-ma" class="hidden">
-          Massachusetts
-        </li>
-        <li id="lb1-mi" class="hidden">
-          Michigan
-        </li>
-        <li id="lb1-mn" class="hidden">
-          Minnesota
-        </li>
-        <li id="lb1-ms" class="hidden">
-          Mississippi
-        </li>
-        <li id="lb1-mo" class="hidden">
-          Missouri
-        </li>
-        <li id="lb1-mt" class="hidden">
-          Montana
-        </li>
-        <li id="lb1-ne" class="hidden">
-          Nebraska
-        </li>
-        <li id="lb1-nv" class="hidden">
-          Nevada
-        </li>
-        <li id="lb1-nh" class="hidden">
-          New Hampshire
-        </li>
-        <li id="lb1-nj" class="hidden">
-          New Jersey
-        </li>
-        <li id="lb1-nm" class="hidden">
-          New Mexico
-        </li>
-        <li id="lb1-ny" class="hidden">
-          New York
-        </li>
-        <li id="lb1-nc" class="hidden">
-          North Carolina
-        </li>
-        <li id="lb1-nd" class="hidden">
-          North Dakota
-        </li>
-        <li id="lb1-mp" class="hidden">
-          Northern Marianas Islands
-        </li>
-        <li id="lb1-oh" class="hidden">
-          Ohio
-        </li>
-        <li id="lb1-ok" class="hidden">
-          Oklahoma
-        </li>
-        <li id="lb1-or" class="hidden">
-          Oregon
-        </li>
-        <li id="lb1-pa" class="hidden">
-          Pennsylvania
-        </li>
-        <li id="lb1-pr" class="hidden">
-          Puerto Rico
-        </li>
-        <li id="lb1-ri" class="hidden">
-          Rhode Island
-        </li>
-        <li id="lb1-sc" class="hidden">
-          South Carolina
-        </li>
-        <li id="lb1-sd" class="hidden">
-          South Dakota
-        </li>
-        <li id="lb1-tn" class="hidden">
-          Tennessee
-        </li>
-        <li id="lb1-tx" class="hidden">
-          Texas
-        </li>
-        <li id="lb1-ut" class="hidden">
-          Utah
-        </li>
-        <li id="lb1-ve" class="hidden">
-          Vermont
-        </li>
-        <li id="lb1-va" class="hidden">
-          Virginia
-        </li>
-        <li id="lb1-vi" class="hidden">
-          Virgin Islands
-        </li>
-        <li id="lb1-wa" class="hidden">
-          Washington
-        </li>
-        <li id="lb1-wv" class="hidden">
-          West Virginia
-        </li>
-        <li id="lb1-wi" class="hidden">
-          Wisconsin
-        </li>
-        <li id="lb1-wy" class="hidden">
-          Wyoming
-        </li>
-      </ul>
     </div>
   </body>
 </html>
