@@ -2,6 +2,28 @@
 
 This repo implements a WAI-ARIA v1.2 compliant combobox with a listbox and a dropdown button.
 
+## Demo
+
+![accessible combobox demo gif](https://user-images.githubusercontent.com/2715151/96359280-03a79d80-10df-11eb-909b-be8eed0ee6b8.gif)
+
+
+## Why ARIA v1.2, not v1.1?
+
+Quote from [the ARIA site](https://www.w3.org/TR/wai-aria-1.2/#combobox):
+
+> The Guidance for combobox has changed significantly in ARIA 1.2 due to problems with implementation of the previous patterns. Authors and developers of User Agents, Assistive Technologies, and Conformance Checkers are advised to review this section carefully to understand the changes.
+
+[ARIA Wiki](https://github.com/w3c/aria/wiki/Resolving-ARIA-1.1-Combobox-Issues) also has detailed explanations of the version issues.
+
+__Essentially, if a combobox implementation follows ARIA v1.1 specs, it would have poor
+screen reader support__.
+
+The major differences between v1.1 and v1.2 include:
+- `role="combobox"` is on a wrapper `<div>`(v.1.1) or `<input>`(v.1.2)
+- `aria-owns` (v.1.1) vs. `aria-controls` (v1.2)
+
+As a result, it is important to get these details right to make your combobox accessible.
+
 ## Usage
 
 HTML:
@@ -69,11 +91,6 @@ new Combobox(
 ```
 
 For more details, check out `index.html` and `example.js`.
-
-## Demo
-
-![accessible combobox demo gif](https://user-images.githubusercontent.com/2715151/96359280-03a79d80-10df-11eb-909b-be8eed0ee6b8.gif)
-
 
 ## Explanations
 When workinng the ARIA v1.1 combobox, I found a few problems with [their reference implementation](https://www.w3.org/TR/wai-aria-practices/examples/combobox/aria1.1pattern/listbox-combo.html).
