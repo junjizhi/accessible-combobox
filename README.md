@@ -1,8 +1,10 @@
 # Accessible Combobox (WAI-ARIA v1.2)
 
+[![npm version](https://badge.fury.io/js/accessible-combobox.svg)](https://badge.fury.io/js/accessible-combobox)
+
 This repo implements a WAI-ARIA v1.2 compliant combobox with a listbox and a dropdown button.
 
-For more details, please check out my blog: [Building an Accessible Combobox](https://blog.junjizhi.com/all/technical/2020/10/18/a11y-combobox.html) 
+For more details, please check out my blog: [Building an Accessible Combobox](https://blog.junjizhi.com/all/technical/2020/10/18/a11y-combobox.html)
 
 ## Demo
 
