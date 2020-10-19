@@ -1,0 +1,8 @@
+{
+  "name": "accessible-combobox",
+  "version": "0.0.1",
+  "description": "Accessible Combobox (WAI-ARIA v1.2 compliant)",
+  "main": "index.js",
+  "author": "Junji Zhi <me@junjizhi.com>",
+  "license": "MIT"
+}

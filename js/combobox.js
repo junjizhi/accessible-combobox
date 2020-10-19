@@ -333,3 +333,7 @@ class Combobox {
     this.input.disabled = true;
   };
 }
+
+if (!window) { // Simple check if it's browser environment
+  exports.Combobox = Combobox;
+}

@@ -26,6 +26,12 @@ The major differences between v1.1 and v1.2 include:
 
 As a result, it is important to get these details right to make your combobox accessible.
 
+## Installation
+
+```bash
+npm i accessible-combobox
+```
+
 ## Usage
 
 HTML:
